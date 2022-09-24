@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class IsPrime {
+public class Prime {
    public static void main(String[] args) {
       Scanner s = new Scanner(System.in);
       System.out.println("Enter any no");

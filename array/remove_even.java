@@ -1,5 +1,6 @@
+package array;
 import java.util.*;
-public class Main {
+public class remove_even {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);                       				     
         int[] A = {1, 2, 4, 5, 10, 6, 3};   

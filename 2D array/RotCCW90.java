@@ -2,7 +2,7 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-public class Main
+public class RotCCW90
 {
     public static int[][] function(int[][] matrix, int n, int m){
       

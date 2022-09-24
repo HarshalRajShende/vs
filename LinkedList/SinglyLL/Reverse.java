@@ -21,4 +21,20 @@ public class Reverse {
         head.next = null;
         return newHead;
     }
+
+
+    public static void revAlternateNodes(Node head){
+        Node oddPtr = head, evenPtr = head.next, temp = head.next;
+        
+        while(oddPtr!=null || evenPtr!=null){
+            oddPtr.next = oddPtr.next.next;   
+            oddPtr = oddPtr.next;            
+           
+            evenPtr.next = oddPtr.next; 
+            evenPtr = evenPtr.next;           
+        }
+        Node temp2 = Reverse.reverse(temp);
+        oddPtr.next = temp2;
+        
+    }
 }

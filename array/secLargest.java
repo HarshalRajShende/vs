@@ -1,8 +1,9 @@
+package array;
 import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-public class Main
+public class secLargest
 {
   	public static int getSecondLargest(int[] arr, int n){
     int max =Integer.MIN_VALUE, secMax = Integer.MIN_VALUE;

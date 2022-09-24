@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main
+public class RotCW90
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
@@ -30,13 +30,13 @@ public class Main
 		}	
 
     // swap cols	  
-for(int i=0; i<r;i++){           // row fix
-   for(int j=0; j<c/2; j++){    // col upto half
-       int temp=arr[i][n-1-j];
-       arr[i][n-1-j]=arr[i][j];
-        arr[i][j]=temp;
-    }
-}
+// for(int i=0; i<r;i++){           // row fix
+//    for(int j=0; j<c/2; j++){    // col upto half
+//        int temp=arr[i][n-1-j];
+//        arr[i][n-1-j]=arr[i][j];
+//         arr[i][j]=temp;
+//     }
+// }
 
 
 //for(int j=0; j<c/2; j++){ 

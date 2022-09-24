@@ -1,6 +1,6 @@
-
+package array;
 import java.util.*;
-public class Main
+public class ArrayRot
 {
 	public static void main(String[] args) {
 	    

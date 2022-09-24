@@ -1,6 +1,6 @@
 
 import java.util.*;
-public class Main {
+public class Transpose {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[][] matrix = {{1,2,3},

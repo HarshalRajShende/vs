@@ -1,6 +1,7 @@
+package array;
 import java.util.*;
 // Second largest element index
-public class Main {
+public class secondLargestIndex {
   
   // Naive approach
     // public static int getLargest(int[] arr, int n){

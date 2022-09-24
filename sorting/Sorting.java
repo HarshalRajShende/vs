@@ -1,4 +1,4 @@
-package sorting;
+
 import java.util.*;
 public class Sorting {
    static int arr[] = {8,5,9,7,1,5};

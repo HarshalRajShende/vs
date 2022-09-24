@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main
+public class merge2sortedArr
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{	
