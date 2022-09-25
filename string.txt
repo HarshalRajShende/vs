@@ -32,7 +32,7 @@ str.toLowerCase()
 
 // conversion
 String str = String.valueOf(var)     
-String str = sb.toString()           // StringBuilder   
+String str = var.toString()
 String str = new String(charArr)
 String str = Arrays.toString(arr)   
 String str = Integer.toString(num) 
@@ -51,13 +51,14 @@ range of string
 
 
 # StringBuilder sb = new StringBuilder("string");   // string to StringBuilder
-//sb.length()
-//sb.charAt(index)                     --> searching
-//sb.append()                         --> insert at last
-//sb.insert(index, char)              --> insert by index
-//sb.setCharAt(index, newChar)           --> replace by index
-//sb.setCharAt(oldChar, newChar)           --> replace by value
-//sb.delete(index1, index2 excluding)
+sb.length()
+sb.charAt(index)                     --> searching
+sb.append()                         --> insert at last
+sb.insert(index, char)              --> insert by index
+sb.setCharAt(index, newChar)           --> replace by index
+sb.setCharAt(oldChar, newChar)           --> replace by value
+sb.delete(index1, index2 excluding)
+sb.deleteCharAt(index)
 
   
 
