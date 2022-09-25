@@ -30,6 +30,9 @@ str.split(string);    //dot(.) is special char, so str.split("\\.");
 str.toUpperCase()
 str.toLowerCase()
 
+// for each loop for string
+for (char c : str.toCharArray())
+
 // conversion
 String str = String.valueOf(var)     
 String str = var.toString()
