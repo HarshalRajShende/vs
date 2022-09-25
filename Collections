@@ -26,6 +26,7 @@ list.remove(index)
 list.removeLast()
 list.contains(data)    -> boolean
 list.isEmpty()          -> boolean
+list1.equals(list2)
 list.size()
 System.out.print(list)
 
@@ -42,6 +43,7 @@ st.peek()
 st.pop()
 st.empty()
 st.size()
+st1.equals(st2)
 System.out.print(st)
 
 	
