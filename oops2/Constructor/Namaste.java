@@ -4,7 +4,7 @@ public class Namaste {
     Namaste(){
         this("Single parameterized constructor");
         System.out.println("The default constructor says Namaste");
-    };
+    }
 
     Namaste(String x){
         this("Single parameterized constructor","double parameterized constructor");
