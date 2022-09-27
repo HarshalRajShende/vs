@@ -11,8 +11,10 @@ char[] charArr = str.toCharArray();
 return new int[] {a1,a2,a3};
 
 
-### ArrayList<T> list = new ArrayList<>(); 
+### ArrayList<T> list = new ArrayList<>();  // unsynchronized list
+### Vector<T> list =  new Vector<>();    // synchronized list
 ### LinkedList<T> list = new LinkedList<>();  
+
 
 Collections.sort(list)
 list.add(data)            -> add at last
