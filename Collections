@@ -11,8 +11,8 @@ char[] charArr = str.toCharArray();
 return new int[] {a1,a2,a3};
 
 
-### ArrayList<T> list = new ArrayList<>();  // unsynchronized list
-### Vector<T> list =  new Vector<>();    // synchronized list
+### ArrayList<T> list = new ArrayList<>();  // unsynchronized list  // 1.5*size // default size of instance of ArrayList is 10 
+### Vector<T> list =  new Vector<>();    // synchronized list     // 2*size
 ### LinkedList<T> list = new LinkedList<>();  
 
 
