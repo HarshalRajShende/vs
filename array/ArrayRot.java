@@ -1,13 +1,12 @@
 package array;
 import java.util.*;
-public class ArrayRot
-{
+class ArrayRot{
 	public static void main(String[] args) {
 	    
 	    // right circular rotation	    // left to right
-	   int[] arr = {5,7,5,8,9,4,2,1,5,3};
+	   int[] arr = {1,2,3,4};
 	   int n = arr.length;
-	   int k = 2; // two rotation  // two elements from back to front
+	   int k = 1; // two rotation  // two elements from back to front
 	   
 	   System.out.print(Arrays.toString(solve(arr, n, k)));
 		
