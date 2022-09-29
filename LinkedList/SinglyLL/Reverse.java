@@ -2,13 +2,13 @@ package SinglyLL;
 
 public class Reverse {
     static Node reverse(Node head){
-        Node prev=null, curr=head, temp=null;
+        Node prev=null, curr=head;
         while(curr != null){
-                temp = curr.next;
+                Node next = curr.next;
                 curr.next = prev;  // reversing
                 // update
                 prev = curr;
-                curr = temp;   // alert
+                curr = next;   // alert
         }
         return prev;
     }
