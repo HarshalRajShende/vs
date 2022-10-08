@@ -1,4 +1,23 @@
 
+ //int i=0, j=1;
+// while(i<n-1){
+
+ for(int i=0, j=1; i<n-1; ){
+      if(arr[i]==arr[j]){
+          System.out.print(true);
+          return;
+      }
+       
+     if(j<n-1)
+        j++;
+      else{
+        i++;
+        j=i+1;
+      }
+        
+    }
+
+
 
 boolean flag=true;
 for(){

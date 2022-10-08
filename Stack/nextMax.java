@@ -1,12 +1,12 @@
-package Stack;
+
 import java.util.*;
 public class nextMax {
 
-    public static int[] nextGreaterEle(int[] arr, int n){
-        int ans[] = new int[n];
+    public static int[] nextMax(int[] arr, int n){
+        
         Stack<Integer> st = new Stack<>();
         // <element>
-              
+        int ans[] = new int[n];  
             for(int i=n-1; i>=0; i--){
                
                  while(!st.empty() && arr[i]>=st.peek()){
@@ -23,7 +23,7 @@ public class nextMax {
 
     }
 
-    public static int[] nextGreaterEleDistance(int[] arr, int n){
+    public static int[] nextMaxDistance(int[] arr, int n){
         int ans[] = new int[n];
         Stack<Integer> st = new Stack<>();
         // <Index>
@@ -52,8 +52,8 @@ public class nextMax {
         }
         sc.close();
 
-        // int[] ans = nextGreaterEle(arr,n);
-        int[] ans = nextGreaterEleDistance(arr,n);
+        // int[] ans = nextMax(arr,n);
+        int[] ans = nextMaxDistance(arr,n);
         
         for(int i=0; i<n; i++){
             System.out.print(ans[i]+" ");

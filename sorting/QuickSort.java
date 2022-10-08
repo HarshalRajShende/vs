@@ -8,10 +8,13 @@ public class QuickSort {
 
 
     public static void quicksort(int[] arr, int l, int r){
-        if(l>=r) return;
-        int p = partition(arr, l, r);
+//        if(l>=r) return;  // base case
+      if(l<r){
+         int p = partition(arr, l, r);
         quicksort(arr, l, p-1);
         quicksort(arr, p+1, r);
+      }
+       
     }
 
     public static void swap(int[] arr, int a, int b){
@@ -21,8 +24,8 @@ public class QuickSort {
     }
 
     public static int partition(int[] arr, int l, int r){
-        
-        int pivot = arr[l];
+        int mid = (l+r)/2;
+        int pivot = arr[mid];
         int i=l, j=r;
         while(i<j){
             while(i<=r && arr[i]<=pivot)
@@ -32,7 +35,7 @@ public class QuickSort {
             if(i<j)
                 swap(arr, i, j);        
         }
-        swap(arr, j, l);       
+        swap(arr, j, mid);       
 
         return j;
     }

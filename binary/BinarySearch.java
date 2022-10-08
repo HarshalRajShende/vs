@@ -1,4 +1,4 @@
-package binary;
+
 
 public class BinarySearch {
     public static void main(String[] args) {
@@ -6,7 +6,7 @@ public class BinarySearch {
         
         int target = 2;
         // int index = binarySearch(arr,target);
-        int index = binarySearchRec(arr, target, 0, arr.length-1);
+        int index = RecBinarySearch(arr, target, 0, arr.length-1);
         System.out.println(index);
     }
 
@@ -25,16 +25,16 @@ public class BinarySearch {
         return -1;
     }
 
-    public static int binarySearchRec(int[] arr,int target,int l,int r){  
+    public static int RecBinarySearch(int[] arr,int target,int l,int r){  
         if(l>r) 
             return -1;  
 
         int mid  = l+(r-l)/2;
 
         if(target<arr[mid])
-            return binarySearchRec(arr, target, l, mid-1);
+            return RecBinarySearch(arr, target, l, mid-1);
         if(target>arr[mid])
-            return binarySearchRec(arr,target, mid+1, r);
+            return RecBinarySearch(arr,target, mid+1, r);
         
         return mid;
 

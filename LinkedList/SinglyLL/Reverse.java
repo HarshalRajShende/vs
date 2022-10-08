@@ -1,6 +1,13 @@
 package SinglyLL;
 
 public class Reverse {
+
+ static void printReverse(Node temp){
+        if(temp==null) return;
+        printReverse(temp.next);
+        System.out.print(temp.val+" ");
+}
+
     static Node reverse(Node head){
         Node prev=null, curr=head;
         while(curr != null){

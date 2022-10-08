@@ -1,11 +1,11 @@
-package binary;
+
 public class firstLastOcc {
     public static void main(String[] args) {
         int[] arr = {1,5,5,5,5,5,8};
         int target = 5;
-        // int index = firstOcc(arr, target, 0, arr.length-1);
-        int index = lastOcc(arr, target, 0, arr.length-1);
-        System.out.println(index);
+        int f = firstOcc(arr, target, 0, arr.length-1);
+        int l = lastOcc(arr, target, 0, arr.length-1);
+        System.out.println(f+" "+l);
     }
     public static int firstOcc(int[] arr, int target, int l, int r){        
         while(l<=r){

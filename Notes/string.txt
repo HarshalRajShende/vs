@@ -1,7 +1,9 @@
+(s==t)             // address
+(s.equals(t))     // values
+
+
 # CHARACTER
 sc.next().charAt(0)
-(s.charAt(8)=='P')     // for value (char)
-(hr.equals("12"))     // for address (string)
 "\\s"   \s -> space
 ' '      space
 //for adding two char and get string need string ahead
@@ -12,9 +14,7 @@ eg. ""+'a'+'b' -> ab
 A-Z -> (65<=c && c<=90)
 a-z -> (97<=c && c<=122)
 	
-range of string
-^ -> except
-"[^a-zA-Z0-9]"
+
 
 
 # STRING	
@@ -40,6 +40,10 @@ String str = new String(charArr)
 String str = Arrays.toString(arr)   
 String str = Integer.toString(num) 
 int n = Integer.parseInt(str)
+
+//char to int
+letter-'a'  -> (int) position acc to english alphabet
+digit-'0'   -> (int) digit
 
 String.format("%.2f",2.3545)
 String.format("%02d", 01);

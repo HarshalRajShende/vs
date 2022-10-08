@@ -18,9 +18,5 @@ public class Print {
         System.out.println();
 
     }
-    static void printReverse(Node temp){
-        if(temp==null) return;
-        printReverse(temp.next);
-        System.out.print(temp.val+" ");
-}
+   
 }

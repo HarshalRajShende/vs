@@ -11,8 +11,9 @@ char[] charArr = str.toCharArray();
 return new int[] {a1,a2,a3};
 
 
-### ArrayList<T> list = new ArrayList<>(); 
-### LinkedList<T> list = new LinkedList<>();  
+### ArrayList<T> list = new ArrayList<>();  // unsynchronized list  // 1.5*size // default size of instance of ArrayList is 10 
+### Vector<T> list =  new Vector<>();    // synchronized list     // 2*size
+### LinkedList<T> list = new LinkedList<>();   
 
 Collections.sort(list)
 list.add(data)            -> add at last
@@ -29,12 +30,10 @@ list.isEmpty()          -> boolean
 list.size()
 System.out.print(list)
 
+//If you want to return the actual Node with the data, you can implement your own LinkedList class with a nested Node class, and return it in there. You do not have access to the "Node" that the java. util class uses in its implementation.
 
-### iterator 
-Iterator it = name.iterator();
-while(it.hasNext()){           //  .hasNext() - set has values already
-System.out.print(it.next());   // .next() - goes to next value
-}
+
+
 
 ### Stack<T> st = new Stack<>();
 st.push(data)
@@ -47,20 +46,51 @@ System.out.print(st)
 	
 ### HashSet<T> set = new HashSet<>();   // Unordered and has unique values
 set.size()
-set.add(value)
-set.remove(value)
-set.contains(value) --> true/false
-set.isEmpty() --> true/false
+set.add()  -> add/update
+set.remove()
+set.get()
+set.contains()
+set.isEmpty() 
 System.out.print(set)
+
+for (String i : set) {
+  sout(i);
+}
+
+for(int i: set){
+   sout(i);List list = new ArrayList<>();
+}
+
+
+
+//Items in an HashSet are actually objects. In the examples above, we created items (objects) of type "String". Remember that a String in Java is an object (not a primitive type). To use other types, such as int, you must specify an equivalent wrapper class: Integer. For other primitive types, use: Boolean for boolean, Character for char, Double for double, etc:
+//HashSet does not maintains the order of its elements. Hence sorting of HashSet is not possible. However, the elements of the HashSet can be sorted indirectly by converting into List 
 
 
 ### HashMap<String, Integer> map = new HashMap<>();  // Unordered and has unique keys
 map.size()
-map.put()
-map.get()
+map.put(key,value)  -> add/update
 map.remove()
-map.containsKey()
+map.get()
+map.getOrDefualt(key,default) 
+map.containsKey() 
+map.containsvalue() 
+map.isEmpty() 
 System.out.print(map)
+
+for(int i=0;i<p.length(); i++){
+            char cp = p.charAt(i);
+            if(mp.get(cp)!=ms.get(cp))
+                return false;
+        }
+
+### for-each
+for(int i: map.keySet()){
+    sout(i + map.get(i))
+}
+for(int i: map.values(){
+    sout(i)
+}
 
 ### Iteration (1)
 for( Map.Entry<String, Integer> e : map.entrySet()) {
@@ -73,6 +103,26 @@ Set<String> keys = map.keySet();
 for(String key : keys) {
   System.out.println(key+ " " + map.get(key));
 }
+
+### Frequency Map
+for(int i: arr){
+    map.put(i,map.getOrDefault(i,0)+1);
+}
+
+for(int i: arr){
+    if(map.containsKey(i)){
+        map.put(i,map.get(i)++);
+    }else{
+        map.put(i,1);
+
+//To loop through a collection, use the hasNext() and next() methods of the Iterator:
+### iterator 
+Iterator it = name.iterator();
+while(it.hasNext()){           //  .hasNext() - set has values already
+System.out.print(it.next());   // .next() - goes to next value
+}
+
+
 
 
 
