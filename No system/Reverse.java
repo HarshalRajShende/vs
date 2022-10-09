@@ -10,14 +10,16 @@ public class Reverse {
    }
 
    public static void printReverse(int n){
-      // for negative values
-      int flag = n<0 ? -1:1;
-      n = n*flag;
+    
       
        
-       long r=0;      
-      while(n>0){
+       long r=0;  
+       long m=0;
+       long i=1;    
+      while(n!=0){
           r = r*10+ n%10; 
+          m = m+ (n%10) * i;
+          i*=10; 
           n/=10;
       } 
       
@@ -28,7 +30,7 @@ public class Reverse {
       }
           
           
-        System.out.println((int)r*flag);  
+        System.out.println((int)r);  
     
    }
 

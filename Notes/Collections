@@ -28,9 +28,11 @@ list.removeLast()
 list.contains(data)    -> boolean
 list.isEmpty()          -> boolean
 list.size()
+list.clear()
 System.out.print(list)
 
-//If you want to return the actual Node with the data, you can implement your own LinkedList class with a nested Node class, and return it in there. You do not have access to the "Node" that the java. util class uses in its implementation.
+// If you want to return the actual Node with the data, you can implement your own LinkedList class with a nested Node class, and return it in there. 
+// You do not have access to the "Node" that the java. util class uses in its implementation.
 
 
 
@@ -45,13 +47,13 @@ System.out.print(st)
 
 	
 ### HashSet<T> set = new HashSet<>();   // Unordered and has unique values
-set.size()
 set.add()  -> add/update
 set.remove()
-set.get()
 set.contains()
 set.isEmpty() 
-System.out.print(set)
+set.clear()
+set.size()
+System.out.print(set) 
 
 for (String i : set) {
   sout(i);
@@ -71,18 +73,18 @@ for(int i: set){
 map.size()
 map.put(key,value)  -> add/update
 map.remove()
-map.get()
+map.get(key)
 map.getOrDefualt(key,default) 
 map.containsKey() 
 map.containsvalue() 
 map.isEmpty() 
+map.clear()
 System.out.print(map)
 
 for(int i=0;i<p.length(); i++){
-            char cp = p.charAt(i);
-            if(mp.get(cp)!=ms.get(cp))
-                return false;
-        }
+    char cp = p.charAt(i);
+    if(mp.get(cp)!=ms.get(cp))
+}
 
 ### for-each
 for(int i: map.keySet()){
