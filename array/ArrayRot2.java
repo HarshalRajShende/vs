@@ -6,7 +6,7 @@ class ArrayRot2 {
     public static void main(String[] args) {
       
       Scanner sc = new Scanner(System.in);
-      int[] arr={1,2,3,4,5,6,7};
+      int[] arr={1,2,3,4,5};
       int n = arr.length;
       int r=sc.nextInt();
       
